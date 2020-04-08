@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja" style="height:100%">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"
+        integrity="sha384-zDnhMsjVZfS3hiP7oCBRmfjkQC4fzxVxFhBx8Hkz2aZX8gEvA/jsP3eXRCvzTofP" crossorigin="anonymous">
+        </script>
+    <script src="./js/Rect.js"></script>
+    <script>
+
+    </script>
+    <style>
+        div.rect {
+            border: 2px solid red;
+            background: rgba(0, 0, 0, 0);
+            position: absolute;
+            /* left: 50%;
+            top: 50%; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="position-relative">
+                    <img id="rectTarget" class="d-block w-100 position-absolute" src="img/0/test_page-0001.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const elm = new Rect("rectTarget");
+        elm.putRect(10,10,10,10);
+    </script>
+</body>
+
+</html>
